@@ -1,0 +1,9 @@
+<nav class="menu">
+  <section class="links">
+    <a href="{{ site.url }}{{ site.baseurl }}" class="title">{{ site.title }}</a>
+    {% for item in site.data.menu %}
+      {% if item.url %}<a href="{{ item.url }}">{{ item.id }}</a>
+      {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ item.path }}">{{ item.id }}</a>{% endif %}
+    {% endfor %}
+  </section>
+</nav>

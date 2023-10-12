@@ -1,0 +1,38 @@
+# Site settings
+title: RotMG Wiki
+email: email@example.com
+description: ""
+
+# URL
+url: "https://extacy.github.io/rotmg"
+baseurl: ""
+
+# Collections
+permalink: /:categories/:title/
+collections:
+  posts:
+    permalink: /:categories/:title/
+  pages:
+    permalink: /:categories/:title/
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: topic
+      class: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: page
+      class: article
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: page
+      class: article
+
+# Plugins
+plugins: []

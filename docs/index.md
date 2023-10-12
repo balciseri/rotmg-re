@@ -1,13 +1,7 @@
-# rotmg
+---
+layout: front
+title: RotMG Wiki
+description: ""
+---
 
-Hello World!
-
-
-## Test
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
+Documentation related to Reverse Engineering the video game Realm of the Mad God Exalt
