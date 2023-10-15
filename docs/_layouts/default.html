@@ -18,6 +18,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/styles.css?{{ build_time }}">
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/syntax.css?{{ build_time }}">
 </head>
 
 <body class="lang-en{% if page.collection %} type-{{ page.collection }}{% else %}{% if depth > 0 %} page-{{ path | join: '-' }}{% else %} page-front{% endif %}{% endif %}{% if page.class %} {{ page.class }}{% endif %}">
