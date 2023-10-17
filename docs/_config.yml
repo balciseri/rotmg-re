@@ -4,8 +4,8 @@ email: email@example.com
 description: ""
 
 # URL
-url: "https://extacy.github.io/rotmg"
-baseurl: ""
+url: "https://extacy.github.io"
+baseurl: "/rotmg"
 
 # Collections
 permalink: /:categories/:title/
