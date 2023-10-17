@@ -1,4 +1,6 @@
 - name: GitHub
-  url: https://github.com/Extacy/rotmg
+  url: https://github.com/Extacy/rotmg-re
+
+# relative url:
 # - name: Test
 #   path: "/asd"

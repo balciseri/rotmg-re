@@ -3,6 +3,8 @@ title: Decrypting IL2CPP Metadata
 category: General
 ---
 
+> The final code to decrypt and unshuffle the header is available [here]({{ site.data.urls.repository }}/tree/master/src/decrypt-metadata)
+
 Since version 4.0.2.0.0 (26th September 2023) the game has started encrypted the header of the IL2CPP global metadata.
 The obfuscator they are using is [Mfuscator](https://assetstore.unity.com/packages/tools/utilities/mfuscator-il2cpp-encryption-256631#description) on the Unity store.
 Thankfully for us, this metadata can easily be deobufscated.
@@ -86,4 +88,4 @@ For example, (here is an unshuffled header):
 We can see the first offset is `1088` and the size `131720`. That means the next offset must be `1088 + 131720 = 132808` which we can see this is the case.
 
 And that is all it takes to unobfuscate the IL2CPP header!
-The final code to decrypt and unshuffle the header is available [here]({{ site.data.urls.repository }}/tree/master/src/decrypt-il2cpp-metadata)
+The final code to decrypt and unshuffle the header is available [here]({{ site.data.urls.repository }}/tree/master/src/decrypt-metadata)

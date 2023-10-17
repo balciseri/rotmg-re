@@ -1,7 +1,7 @@
 ---
 layout: front
-title: RotMG Wiki
+title: Reverse Engineering RotMG
 description: ""
 ---
 
-Documentation related to Reverse Engineering the video game Realm of the Mad God Exalt
+Documentation related to reverse engineering the video game Realm of the Mad God Exalt

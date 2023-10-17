@@ -1,11 +1,11 @@
 # Site settings
-title: RotMG Wiki
+title: rotmg-re docs
 email: email@example.com
 description: ""
 
 # URL
 url: "https://extacy.github.io"
-baseurl: "/rotmg"
+baseurl: "/rotmg-re"
 
 # Collections
 permalink: /:categories/:title/
