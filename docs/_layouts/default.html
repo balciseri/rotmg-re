@@ -19,6 +19,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/styles.css?{{ build_time }}">
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/syntax.css?{{ build_time }}">
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/darkreader.css?{{ build_time }}">
 </head>
 
 <body class="lang-en{% if page.collection %} type-{{ page.collection }}{% else %}{% if depth > 0 %} page-{{ path | join: '-' }}{% else %} page-front{% endif %}{% endif %}{% if page.class %} {{ page.class }}{% endif %}">
@@ -33,5 +34,8 @@
   <script src="{{ site.url }}{{ site.baseurl }}/assets/lunr.js?{{ timestamp }}" type="text/javascript"></script>
   <script src="{{ site.url }}{{ site.baseurl }}/assets/search.js?{{ timestamp }}" type="text/javascript"></script>
   {% for script in page.scripts %}<script src="{{ site.url }}{{ site.baseurl }}{{ script }}?{{ build_time }}" type="text/javascript"></script>{% endfor %}
+  
+  {% comment %} <script src="https://unpkg.com/darkreader@4.9.67/darkreader.js"></script> {% endcomment %}
+  {% comment %} <script type="text/javascript">DarkReader.enable()</script> {% endcomment %}
 </body>
 </html>

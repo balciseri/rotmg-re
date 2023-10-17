@@ -1,0 +1,660 @@
+/*
+                        _______
+                       /       \\
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\\
+                   /____|| || ||___\\
+       ________     ____    ________  ___    ___
+       |  ___  \\   /    \\   |  ___  \\ |  |  /  /
+       |  |  \\  \\ /  /\\  \\  |  |  \\  \\|  |_/  /
+       |  |   )  /  /__\\  \\ |  |__/  /|  ___  \\
+       |  |__/  /  ______  \\|  ____  \\|  |  \\  \\
+_______|_______/__/ ____ \\__\\__|___\\__\\__|___\\__\\____
+|  ___  \\ |  ____/ /    \\   |  ___  \\ |  ____|  ___  \\
+|  |  \\  \\|  |___ /  /\\  \\  |  |  \\  \\|  |___|  |  \\  \\
+|  |__/  /|  ____/  /__\\  \\ |  |   )  |  ____|  |__/  /
+|  ____  \\|  |__/  ______  \\|  |__/  /|  |___|  ____  \\
+|__|   \\__\\____/__/      \\__\\_______/ |______|__|   \\__\\
+                https://darkreader.org
+*/
+
+/*! Dark reader generated CSS | Licensed under MIT https://github.com/darkreader/darkreader/blob/main/LICENSE */
+
+/* User-Agent Style */
+html {
+    background-color: #232525 !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: #232525;
+}
+html, body {
+    border-color: #8d8372;
+    color: #ffffff;
+}
+a {
+    color: #4faeff;
+}
+table {
+    border-color: #6b7070;
+}
+::placeholder {
+    color: #d8cdbe;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #51540c !important;
+    color: #ffffff !important;
+}
+::-webkit-scrollbar {
+    background-color: #2d2f2f;
+    color: #cfc5b5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #595c5d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6e7475;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #5c6162;
+}
+::-webkit-scrollbar-corner {
+    background-color: #232525;
+}
+* {
+    scrollbar-color: #595c5d #2d2f2f;
+}
+::selection {
+    background-color: #115fbc !important;
+    color: #ffffff !important;
+}
+::-moz-selection {
+    background-color: #115fbc !important;
+    color: #ffffff !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #1d1f1f;
+   --darkreader-neutral-text: #fffdf1;
+   --darkreader-selection-background: #115fbc;
+   --darkreader-selection-text: #ffffff;
+}
+
+/* Modified CSS */
+a {
+    background-color: transparent; 
+}
+abbr[title] {
+    border-bottom-color: currentcolor; text-decoration-color: currentcolor; 
+}
+button:focus-visible, [type="button"]:focus-visible, [type="reset"]:focus-visible, [type="submit"]:focus-visible {
+    outline-color: rgb(166, 155, 137);
+}
+legend {
+    color: inherit;
+}
+body {
+    background-color: rgb(34, 36, 37);
+    background-image: none;
+    color: rgb(242, 238, 231);
+}
+a {
+    color: rgb(86, 202, 255);
+    text-decoration-color: currentcolor;
+}
+a:hover {
+    text-decoration-color: currentcolor;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(242, 238, 231);
+}
+blockquote {
+    border-left-color: rgb(63, 68, 70);
+}
+code,
+.code {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+}
+table {
+    border-color: currentcolor;
+}
+table thead th,
+table thead td,
+table tbody th,
+table tbody td {
+    border-color: currentcolor;
+}
+table tbody tr td,
+table tbody tr th {
+    border-top-color: rgba(79, 85, 88, 0.3);
+}
+.icon svg {
+    fill: rgb(189, 179, 165);
+}
+a.icon:hover svg {
+    fill: rgb(242, 238, 231);
+}
+@media (max-width: 640px) {
+    .grid,
+    .grid-3 {
+        list-style-image: none;
+    }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid,
+    .grid-3 {
+        list-style-image: none;
+    }
+}
+@media (min-width: 1025px) {
+    .grid,
+    .grid-3 {
+        list-style-image: none;
+    }
+}
+@media (max-width: 640px) {
+    .grid-4 {
+        list-style-image: none;
+    }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-4 {
+        list-style-image: none;
+    }
+}
+@media (min-width: 1025px) {
+    .grid-4 {
+        list-style-image: none;
+    }
+}
+@media (max-width: 640px) {
+    .grid-2 {
+        list-style-image: none;
+    }
+}
+@media (min-width: 641px) {
+    .grid-2 {
+        list-style-image: none;
+    }
+}
+.button {
+    background-color: rgb(34, 36, 37);
+    background-image: none;
+    border-color: rgb(79, 85, 88);
+    color: rgb(242, 238, 231);
+    outline-color: currentcolor;
+}
+.button.processing::before {
+    border-color: rgb(61, 66, 68) rgba(166, 155, 137, 0.1) rgba(166, 155, 137, 0.1);
+}
+.button:hover {
+    border-color: rgb(6, 114, 221);
+    color: rgb(86, 202, 255);
+    text-decoration-color: currentcolor;
+}
+.button:active,
+.button:focus {
+    box-shadow: rgba(6, 109, 210, 0.2) 0px 0px 0px 2px; 
+}
+.button[disabled="disabled"], .button[disabled="true"],
+.button[disabled],
+.button.disabled {
+    border-color: rgba(79, 85, 88, 0.6);
+    color: rgb(231, 225, 216);
+}
+.button.primary {
+    background-color: rgb(6, 109, 210);
+    background-image: none;
+    border-color: rgb(6, 114, 221);
+    color: rgb(255, 255, 255);
+}
+.button.primary:hover {
+    background-color: rgb(6, 96, 188);
+    background-image: none;
+    border-color: rgb(6, 117, 229); 
+}
+.button.primary[disabled="disabled"], .button.primary[disabled="true"],
+.button.primary[disabled],
+.button.primary.disabled {
+    background-color: rgb(70, 75, 78);
+    background-image: none;
+    border-color: rgb(79, 85, 88);
+}
+.button.danger {
+    background-color: rgb(192, 53, 53);
+    background-image: none;
+    border-color: rgb(169, 47, 47);
+    color: rgb(255, 255, 255);
+}
+.button.danger:hover {
+    background-color: rgb(174, 49, 49);
+    background-image: none;
+    border-color: rgb(176, 49, 49); 
+}
+.button.danger[disabled="disabled"], .button.danger[disabled="true"],
+.button.danger[disabled],
+.button.danger.disabled {
+    background-color: rgb(70, 75, 78);
+    background-image: none;
+    border-color: rgb(79, 85, 88);
+}
+.bundle > .button:hover + .button,
+.bundle > .button:hover + * .button,
+.bundle > * .button:hover + .button,
+.bundle > * .button:hover + * .button {
+    border-left-color: rgb(6, 114, 221);
+}
+.field .description {
+    color: rgb(189, 179, 165);
+}
+fieldset {
+    border-color: rgb(79, 85, 88);
+}
+input,
+textarea,
+select {
+    box-shadow: none;
+    color: inherit;
+}
+input,
+textarea,
+.select select {
+    background-color: rgb(34, 36, 37);
+    background-image: none;
+    border-color: rgb(79, 85, 88);
+}
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+.select select:active,
+.select select:focus {
+    border-color: rgb(6, 114, 221);
+    box-shadow: rgba(6, 109, 210, 0.2) 0px 0px 0px 2px; outline-color: currentcolor; 
+}
+input[disabled], input[disabled="disabled"], input[disabled="true"], input[disabled], input[readonly="true"], input[readonly="readonly"], input[readonly], textarea[disabled], textarea[disabled="disabled"], textarea[disabled="true"], textarea[disabled], textarea[readonly="true"], textarea[readonly="readonly"], textarea[readonly], .select select[disabled], .select select[disabled="disabled"], .select select[disabled="true"], .select select[disabled], .select select[readonly="true"], .select select[readonly="readonly"],
+.select select[readonly] {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+    border-color: rgba(79, 85, 88, 0.6);
+    color: rgb(189, 179, 165); 
+}
+input[disabled]:active, input[disabled]:focus, input[disabled]:hover, input[disabled="disabled"]:active, input[disabled="disabled"]:focus, input[disabled="disabled"]:hover, input[disabled="true"]:active, input[disabled="true"]:focus, input[disabled="true"]:hover, input[disabled]:active, input[disabled]:focus, input[disabled]:hover, input[readonly="true"]:active, input[readonly="true"]:focus, input[readonly="true"]:hover, input[readonly="readonly"]:active, input[readonly="readonly"]:focus, input[readonly="readonly"]:hover, input[readonly]:active, input[readonly]:focus, input[readonly]:hover, textarea[disabled]:active, textarea[disabled]:focus, textarea[disabled]:hover, textarea[disabled="disabled"]:active, textarea[disabled="disabled"]:focus, textarea[disabled="disabled"]:hover, textarea[disabled="true"]:active, textarea[disabled="true"]:focus, textarea[disabled="true"]:hover, textarea[disabled]:active, textarea[disabled]:focus, textarea[disabled]:hover, textarea[readonly="true"]:active, textarea[readonly="true"]:focus, textarea[readonly="true"]:hover, textarea[readonly="readonly"]:active, textarea[readonly="readonly"]:focus, textarea[readonly="readonly"]:hover, textarea[readonly]:active, textarea[readonly]:focus, textarea[readonly]:hover, .select select[disabled]:active, .select select[disabled]:focus, .select select[disabled]:hover, .select select[disabled="disabled"]:active, .select select[disabled="disabled"]:focus, .select select[disabled="disabled"]:hover, .select select[disabled="true"]:active, .select select[disabled="true"]:focus, .select select[disabled="true"]:hover, .select select[disabled]:active, .select select[disabled]:focus, .select select[disabled]:hover, .select select[readonly="true"]:active, .select select[readonly="true"]:focus, .select select[readonly="true"]:hover, .select select[readonly="readonly"]:active, .select select[readonly="readonly"]:focus, .select select[readonly="readonly"]:hover,
+.select select[readonly]:active,
+.select select[readonly]:focus,
+.select select[readonly]:hover {
+    border-color: rgba(79, 85, 88, 0.6);
+    box-shadow: none;
+}
+.grey {
+    color: rgb(189, 179, 165);
+}
+.color-inherit {
+    color: inherit;
+}
+.border-bottom {
+    border-bottom-color: rgb(79, 85, 88);
+}
+.border-left {
+    border-left-color: rgb(79, 85, 88);
+}
+.border-right {
+    border-right-color: rgb(79, 85, 88);
+}
+.border-top {
+    border-top-color: rgb(79, 85, 88);
+}
+ul.list {
+    list-style-image: none;
+}
+.switch:active {
+    border-color: rgb(6, 114, 221);
+    box-shadow: rgba(6, 109, 210, 0.2) 0px 0px 0px 2px;
+    outline-color: currentcolor;
+}
+.switch input:checked + .slider {
+    background-color: rgb(6, 109, 210);
+    background-image: none;
+}
+.switch .slider {
+    background-color: rgb(70, 75, 78);
+    background-image: none;
+}
+.switch .slider span {
+    background-color: rgb(34, 36, 37);
+    background-image: none;
+}
+.switch .slider span::after {
+    background-color: rgb(123, 192, 53);
+    background-image: none;
+}
+.card {
+    border-color: rgb(79, 85, 88);
+    box-shadow: rgba(6, 6, 6, 0) 0px 1px 0px 0px;
+}
+a.card {
+    color: inherit;
+}
+a.card:hover {
+    box-shadow: rgba(6, 6, 6, 0.1) 0px 1px 4px 0px;
+    text-decoration-color: currentcolor;
+}
+.loading::before {
+    background-color: rgba(34, 36, 37, 0.8);
+    background-image: none;
+}
+.loading::after {
+    border-color: rgb(6, 114, 221) rgb(63, 68, 70) rgb(63, 68, 70);
+}
+.dropdown .options {
+    background-color: rgb(34, 36, 37);
+    background-image: none;
+    border-color: rgba(79, 85, 88, 0.6);
+    box-shadow: rgba(6, 6, 6, 0.1) 0px 1px 4px 0px;
+}
+.dropdown.menu .options .option {
+    background-color: rgba(33, 43, 47, 0);
+    background-image: none;
+    color: inherit;
+}
+.dropdown.menu .options .option:hover {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+    text-decoration-color: currentcolor;
+}
+.dropdown.menu .options .option.danger:hover {
+    color: rgb(245, 87, 87);
+}
+.dropdown.menu .options .option a,
+.dropdown.menu .options .option a:hover {
+    color: inherit;
+    text-decoration-color: inherit;
+}
+.dropdown.menu .options > hr {
+    border-color: rgba(79, 85, 88, 0.6) currentcolor currentcolor;
+}
+.modal {
+    background-color: rgba(31, 42, 53, 0);
+    background-image: none;
+}
+.modal .box {
+    background-color: rgb(34, 36, 37);
+    background-image: none;
+    border-color: rgba(123, 115, 102, 0.6);
+    box-shadow: rgba(6, 6, 6, 0.3) 0px 1px 8px 0px;
+}
+.modal .box > .header {
+    border-bottom-color: rgba(79, 85, 88, 0.3);
+}
+.modal .box > .header .close svg {
+    fill: rgba(189, 179, 165, 0.6);
+}
+.modal .box > .header .close:hover svg {
+    fill: rgb(189, 179, 165);
+}
+.modal .box .footer {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+    border-top-color: rgba(79, 85, 88, 0.3);
+}
+.modal.active {
+    background-color: rgba(31, 42, 53, 0.3);
+    background-image: none;
+}
+.tooltip > .text,
+.tooltip-bottom > .text,
+.tooltip-left > .text,
+.tooltip-right > .text,
+.tooltip-top > .text {
+    background-color: rgb(31, 42, 53);
+    background-image: none;
+    color: rgb(255, 255, 255);
+}
+.tooltip > .text::after,
+.tooltip-top > .text::after {
+    border-color: rgb(151, 141, 125) transparent;
+}
+.tooltip-bottom > .text::after {
+    border-color: rgb(151, 141, 125) transparent;
+}
+.tooltip-left > .text::after {
+    border-color: transparent rgb(151, 141, 125);
+}
+.tooltip-right > .text::after {
+    border-color: transparent rgb(151, 141, 125);
+}
+.notification {
+    color: rgb(255, 255, 255);
+}
+.notification.error {
+    background-color: rgb(67, 21, 21);
+    background-image: none;
+    color: rgb(245, 87, 87);
+}
+.notification.success {
+    background-color: rgb(44, 46, 49);
+    background-image: none;
+    color: rgb(86, 202, 255);
+}
+.notification.warning {
+    background-color: rgb(84, 45, 6);
+    background-image: none;
+    color: rgb(255, 177, 62);
+}
+.notification a {
+    color: inherit;
+    text-decoration-color: currentcolor;
+}
+.notification a:active,
+.notification a:hover {
+    text-decoration-color: currentcolor;
+}
+.notification .close {
+    background-color: transparent;
+    background-image: none;
+    border-color: currentcolor;
+    color: inherit;
+    text-decoration-color: currentcolor;
+}
+#header {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+}
+#header a {
+    color: inherit;
+}
+.page-front #hero {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+}
+#content .navigation {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+}
+#content .navigation a.active {
+    color: inherit;
+}
+#content .navigation ul {
+    list-style-image: none;
+}
+.search-wrapper svg {
+    fill: rgb(189, 179, 165);
+}
+.search-wrapper .search-results {
+    background-color: rgb(34, 36, 37);
+    background-image: none;
+    border-color: rgb(79, 85, 88);
+    box-shadow: rgba(6, 6, 6, 0.1) 0px 1px 4px 0px;
+}
+.search-wrapper .search-results ul {
+    list-style-image: none;
+}
+.search-wrapper .search-results ul li a {
+    color: inherit;
+}
+.search-wrapper .search-results ul li a:hover {
+    background-color: rgb(33, 43, 47);
+    background-image: none;
+    text-decoration-color: currentcolor;
+}
+.search-wrapper .search-results .default,
+.search-wrapper .search-results .empty {
+    color: rgb(189, 179, 165);
+}
+.highlight,
+.highlight .w {
+    color: rgb(241, 237, 229);
+    background-color: rgb(38, 41, 42);
+}
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .kv {
+    color: rgb(255, 82, 94);
+}
+.highlight .gr {
+    color: rgb(253, 255, 255);
+}
+.highlight .gd {
+    color: rgb(255, 139, 166);
+    background-color: rgb(79, 13, 6);
+}
+.highlight .nb {
+    color: rgb(255, 186, 120);
+}
+.highlight .nc {
+    color: rgb(255, 186, 120);
+}
+.highlight .no {
+    color: rgb(255, 186, 120);
+}
+.highlight .nn {
+    color: rgb(255, 186, 120);
+}
+.highlight .sr {
+    color: rgb(168, 255, 200);
+}
+.highlight .na {
+    color: rgb(168, 255, 200);
+}
+.highlight .nt {
+    color: rgb(168, 255, 200);
+}
+.highlight .gi {
+    color: rgb(168, 255, 200);
+    background-color: rgb(14, 84, 43);
+}
+.highlight .kc {
+    color: rgb(122, 212, 255);
+}
+.highlight .l,
+.highlight .ld,
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mx {
+    color: rgb(122, 212, 255);
+}
+.highlight .sb {
+    color: rgb(122, 212, 255);
+}
+.highlight .bp {
+    color: rgb(122, 212, 255);
+}
+.highlight .ne {
+    color: rgb(122, 212, 255);
+}
+.highlight .nl {
+    color: rgb(122, 212, 255);
+}
+.highlight .py {
+    color: rgb(122, 212, 255);
+}
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+    color: rgb(122, 212, 255);
+}
+.highlight .o,
+.highlight .ow {
+    color: rgb(122, 212, 255);
+}
+.highlight .gh {
+    color: rgb(122, 212, 255);
+}
+.highlight .gu {
+    color: rgb(122, 212, 255);
+}
+.highlight .s,
+.highlight .sa,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1,
+.highlight .ss {
+    color: rgb(172, 230, 255);
+}
+.highlight .nd {
+    color: rgb(163, 108, 255);
+}
+.highlight .nf,
+.highlight .fm {
+    color: rgb(163, 108, 255);
+}
+.highlight .err {
+    color: rgb(253, 255, 255);
+    background-color: rgb(125, 13, 34);
+}
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
+    color: rgb(185, 175, 160);
+}
+.highlight .gl {
+    color: rgb(185, 175, 160);
+}
+.highlight .gt {
+    color: rgb(185, 175, 160);
+}
+.highlight .ni {
+    color: rgb(241, 237, 229);
+}
+.highlight .si {
+    color: rgb(241, 237, 229);
+}
+.highlight .ge {
+    color: rgb(241, 237, 229);
+}
+.highlight .gs {
+    color: rgb(241, 237, 229);
+}
