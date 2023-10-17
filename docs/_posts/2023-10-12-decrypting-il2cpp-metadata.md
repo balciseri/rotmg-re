@@ -62,7 +62,7 @@ The first thing sticking out is this string `"##%$vsw'lytyqlusxul##p\"lvxrsv\"y\
 This is the key that is used to decrypt the header.
 
 To determine the cipher used, we can use the IDA Pro plugin [findcrypt-yara](https://github.com/polymorf/findcrypt-yara)
-![Screenshot]({{ "/files/images/posts/decrypting-il2cpp-metadata\metadata_findcrypt_results.png" | relative_url }})
+![Screenshot]({{ "/files/images/posts/decrypting-il2cpp-metadata/metadata_findcrypt_results.png" | relative_url }})
 We can see the first result here is the xxtea cipher. Note that xxtea requires a key length of 16 bytes, which is taken from the last 16 bytes of the key that was deciphered earlier.
 
 
